@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shijizhuo.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.shijizhuo.demo.entity.User">
+        <id column="id" jdbcType="INTEGER" property="id"></id>
+        <result column="name" jdbcType="VARCHAR" property="name"></result>
+        <result column="passwd" jdbcType="VARCHAR" property="passwd"></result>
+    </resultMap>
+
+    <select id="Se" resultMap="BaseResultMap">
+        SELECT id,name,passwd FROM user WHERE id = #{id}
+    </select>
+
+    <select id="SelList" resultType="com.shijizhuo.demo.entity.User">
+        SELECT * FROM user
+    </select>
+
+    <select id="Del">
+        DELETE FROM user WHERE ID = #{id}
+    </select>
+
+    <select id="insertUser" parameterType="com.shijizhuo.demo.entity.User">
+        insert into user(name,passwd) values(#{name},#{passwd})
+    </select>
+
+</mapper>
