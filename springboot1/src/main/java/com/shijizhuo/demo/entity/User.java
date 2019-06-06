@@ -2,6 +2,8 @@ package com.shijizhuo.demo.entity;/**
  * Created by jazzyshi on 2019/6/2.
  */
 
+import java.io.Serializable;
+
 /**
  * @ClassName User
  * @Description TODO
@@ -9,7 +11,7 @@ package com.shijizhuo.demo.entity;/**
  * @Date 2019/6/2 14:34
  * @Version 1.0
  **/
-public class User {
+public class User implements Serializable{
     private Integer id;
     private String name;
     private String passwd;
