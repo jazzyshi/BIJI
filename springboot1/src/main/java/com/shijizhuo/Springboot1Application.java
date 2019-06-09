@@ -7,6 +7,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import javax.servlet.ServletRegistration;
 import javax.servlet.http.HttpServlet;
@@ -18,6 +19,7 @@ import javax.swing.plaf.synth.SynthEditorPaneUI;
 @SpringBootApplication
 @ServletComponentScan
 @EnableCaching
+@EnableScheduling
 public class Springboot1Application {
 
 	public static void main(String[] args) {

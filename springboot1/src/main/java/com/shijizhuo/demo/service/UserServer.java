@@ -2,9 +2,11 @@ package com.shijizhuo.demo.service;/**
  * Created by jazzyshi on 2019/6/2.
  */
 
+import com.shijizhuo.demo.RedisConfiguration;
 import com.shijizhuo.demo.entity.User;
 import com.shijizhuo.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -26,7 +28,11 @@ public class UserServer {
     UserMapper userMapper;
 
     @Autowired
-    private static StringRedisTemplate rt;
+    private  StringRedisTemplate st;
+
+    @Qualifier("redisTemplate")
+    @Autowired
+    private RedisTemplate rs;
 
     public void insert(User user){
         userMapper.insertUser(user);
@@ -53,7 +59,9 @@ public class UserServer {
     @Cacheable(cacheNames = "demo",unless="#result == null")
     public User Se(int id){
 
-         rt.opsForValue().set(id+"","id"+id);
+         st.opsForValue().set(id+"","id"+id);
+
+        System.out.println("redis"+st.opsForValue().get("id")+3);
 
         return userMapper.Se(id);
     }

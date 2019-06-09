@@ -85,14 +85,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
 		<!-- 添加jedis客户端 -->
 		<dependency>
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
 		</dependency>
-
-
 		<!-- springboot 缓存支持启动器-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -107,6 +104,11 @@
 		<dependency>
 			<groupId>javax.cache</groupId>
 			<artifactId>cache-api</artifactId>
+		</dependency>
+        <!-- 添加scheduled坐标-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
 		</dependency>
 	</dependencies>
 
