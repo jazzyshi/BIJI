@@ -13,7 +13,7 @@ public class AppConsumer
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring/dubbo-consumer.xml");
         context.start();
-        DemoService demoService = context.getBean("demoService11", DemoService.class);
+        DemoService demoService = context.getBean("demoService", DemoService.class);
         String hello = demoService.sayHello("world");
         float price = demoService.getPrice("");
         System.out.println("result: " + hello);
