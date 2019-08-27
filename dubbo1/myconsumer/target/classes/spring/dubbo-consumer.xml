@@ -25,6 +25,6 @@
     <dubbo:registry address="zookeeper://172.16.106.7:2181" />
 
     <!-- declare the service interface to be exported -->
-    <dubbo:reference id="demoService11" check="false" interface="com.dubbo1.demo.DemoService"/>
+    <dubbo:reference id="demoService" check="false" interface="com.dubbo1.demo.DemoService"/>
 
 </beans>

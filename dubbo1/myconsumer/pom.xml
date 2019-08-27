@@ -41,6 +41,18 @@
       <artifactId>myinterface</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.2</version>
+      <type>jar</type>
+      <exclusions>
+        <exclusion>
+          <artifactId>snakeyaml</artifactId>
+          <groupId>org.yaml</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
   </dependencies>
 
   <build>

@@ -1,9 +1,0 @@
-com\shijizhuo\smvc\annotation\JZService.class
-com\shijizhuo\smvc\annotation\JZRequestParam.class
-com\shijizhuo\smvc\demo\service\IDemoService.class
-com\shijizhuo\smvc\annotation\JZController.class
-com\shijizhuo\smvc\annotation\JZRequestMapping.class
-com\shijizhuo\smvc\demo\action\DemoAction.class
-com\shijizhuo\smvc\demo\service\impl\DemoService.class
-com\shijizhuo\smvc\annotation\JZAutoWrited.class
-com\shijizhuo\smvc\servlet\JZDispatchererServlet.class
