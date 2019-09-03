@@ -1,6 +1,5 @@
 package com.jz.bigdata.myinternet.mycoucurrent.specialuse;
 
-import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -33,10 +32,10 @@ public class CountDownLatchDemo {
         }
         threadPool.shutdown();
         //主线程
-        System.out.println("等待其他10个线程任务执行完毕，主线程才开开始执行任务："+Thread.currentThread().getName());
+        System.out.println("等待其他10个线程任务执行完毕，主线程才会开始执行任务："+Thread.currentThread().getName());
         try {
             latch.await();
-            System.out.println("其他10个线程任务执行完毕，主线程开始执行任务："+Thread.currentThread().getName());
+            System.out.println("其他10个线程任务【执行完毕】，主线程开始执行任务："+Thread.currentThread().getName());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

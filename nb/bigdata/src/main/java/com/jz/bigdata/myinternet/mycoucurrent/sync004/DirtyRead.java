@@ -38,7 +38,7 @@ public class DirtyRead {
 		Thread t1 = new Thread(new Runnable() {
 			@Override
 			public void run() {
-				dr.setValue("z3", "456");		
+				dr.setValue("paoguxueyuan", "456");
 			}
 		});
 		t1.start();

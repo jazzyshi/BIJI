@@ -25,7 +25,6 @@ public class UseReentrantLock {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		} finally {
-			
 			lock.unlock();
 		}
 	}
@@ -40,7 +39,6 @@ public class UseReentrantLock {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		} finally {
-			
 			lock.unlock();
 		}
 	}

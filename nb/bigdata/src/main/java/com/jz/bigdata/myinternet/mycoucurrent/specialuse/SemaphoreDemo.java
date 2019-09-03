@@ -34,15 +34,17 @@ public class SemaphoreDemo implements Runnable{
         }
     }
 
-    public static void main(String ...args){
+    public static void main(String ...args) throws InterruptedException {
 
         //定义窗口数量
         final Semaphore semaphore = new Semaphore(2);
         //线程池
         ExecutorService threadPool = Executors.newCachedThreadPool();
         //模拟20个用户去买票
-        for(int i=0;i<20;i++){
+        for(int i=0;i<100;i++){
             //去买票
+            System.out.println("用户【"+i+"】"+"来到车站");
+            Thread.sleep(100);
             threadPool.execute(new SemaphoreDemo(semaphore,i));
         }
 

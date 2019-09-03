@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.jz.bigdata.myinternet.mydisruptor.base.LongEvent</OriginalElement>
+  <nodes>
+    <node x="376.66666666666663" y="277.0">com.jz.bigdata.myinternet.mydisruptor.base.LongEventMain</node>
+    <node x="857.0" y="103.0">com.jz.bigdata.myinternet.mydisruptor.base.LongEventProducerWithTranslator</node>
+    <node x="319.0" y="114.5">com.jz.bigdata.myinternet.mydisruptor.base.LongEventProducer</node>
+    <node x="689.3333333333334" y="0.0">com.jz.bigdata.myinternet.mydisruptor.base.LongEvent</node>
+    <node x="0.0" y="138.5">com.jz.bigdata.myinternet.mydisruptor.base.LongEventHandler</node>
+    <node x="648.0" y="138.5">com.jz.bigdata.myinternet.mydisruptor.base.LongEventFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.jz.bigdata.myinternet.mydisruptor.base.LongEventMain" target="com.jz.bigdata.myinternet.mydisruptor.base.LongEventProducer">
+      <point x="0.0" y="-26.5" />
+      <point x="464.16666666666663" y="252.0" />
+      <point x="473.5" y="252.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="com.jz.bigdata.myinternet.mydisruptor.base.LongEventMain" target="com.jz.bigdata.myinternet.mydisruptor.base.LongEventFactory">
+      <point x="58.33333333333334" y="-26.5" />
+      <point x="522.5" y="252.0" />
+      <point x="742.5" y="252.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.jz.bigdata.myinternet.mydisruptor.base.LongEventMain" target="com.jz.bigdata.myinternet.mydisruptor.base.LongEventHandler">
+      <point x="-58.33333333333334" y="-26.5" />
+      <point x="405.8333333333333" y="252.0" />
+      <point x="149.5" y="252.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.jz.bigdata.myinternet.mydisruptor.base.LongEventFactory" target="com.jz.bigdata.myinternet.mydisruptor.base.LongEvent">
+      <point x="0.0" y="-26.5" />
+      <point x="742.5" y="78.0" />
+      <point x="745.3333333333334" y="78.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.jz.bigdata.myinternet.mydisruptor.base.LongEventProducerWithTranslator" target="com.jz.bigdata.myinternet.mydisruptor.base.LongEvent">
+      <point x="0.0" y="-62.0" />
+      <point x="1102.5" y="78.0" />
+      <point x="782.6666666666667" y="78.0" />
+      <point x="37.33333333333337" y="26.5" />
+    </edge>
+    <edge source="com.jz.bigdata.myinternet.mydisruptor.base.LongEventProducer" target="com.jz.bigdata.myinternet.mydisruptor.base.LongEvent">
+      <point x="0.0" y="-50.5" />
+      <point x="473.5" y="78.0" />
+      <point x="708.0" y="78.0" />
+      <point x="-37.33333333333334" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="674.0" y="165.0" />
+  <SelectedNodes>
+    <node>com.jz.bigdata.myinternet.mydisruptor.base.LongEvent</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

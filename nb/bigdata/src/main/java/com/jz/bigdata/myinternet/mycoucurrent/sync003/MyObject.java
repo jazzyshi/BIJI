@@ -25,7 +25,7 @@ public class MyObject {
 			System.out.println(Thread.currentThread().getName());
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		final MyObject mo = new MyObject();
 		
@@ -49,6 +49,7 @@ public class MyObject {
 		},"t2");
 		
 		t1.start();
+		Thread.sleep(100);
 		t2.start();
 		
 	}

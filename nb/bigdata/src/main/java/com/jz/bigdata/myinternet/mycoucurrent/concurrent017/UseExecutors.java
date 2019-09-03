@@ -1,8 +1,5 @@
 package com.jz.bigdata.myinternet.mycoucurrent.concurrent017;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 /**
  * 线程框架Executor:为了更好的控制线程。在java.util.concurrent包中
  * 多任务执行框架
@@ -20,12 +17,6 @@ import java.util.concurrent.Executors;
 public class UseExecutors {
 
 	public static void main(String[] args) {
-		
-		//ExecutorService pool = Executors.newSingleThreadExecutor()
-		
-		//cache fixed single
-		
-		
 		
 	}
 }

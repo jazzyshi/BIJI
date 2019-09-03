@@ -9,7 +9,7 @@ public class Main {
 
 	public static void main(String[] args) throws Exception {
 		//内存缓冲区
-		BlockingQueue<Data> queue = new LinkedBlockingQueue<Data>(10);
+		BlockingQueue<Data> queue = new LinkedBlockingQueue<Data>();
 		//生产者
 		Provider p1 = new Provider(queue);
 		
@@ -29,19 +29,19 @@ public class Main {
 		cachePool.execute(c2);
 		cachePool.execute(c3);
 
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		p1.stop();
-		p2.stop();
-		p3.stop();
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}		
+//		try {
+//			Thread.sleep(3000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+//		p1.stop();
+//		p2.stop();
+//		p3.stop();
+//		try {
+//			Thread.sleep(2000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 //		cachePool.shutdown(); 
 //		cachePool.shutdownNow();
 		

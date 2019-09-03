@@ -11,7 +11,7 @@ package com.jz.bigdata.myinternet.mycoucurrent.sync002;
  */
 public class MultiThread {
 
-	private int num = 0;
+	private static int num = 0;
 	
 	/** static */
 	public synchronized void printNum(String tag){
@@ -20,7 +20,7 @@ public class MultiThread {
 			if(tag.equals("a")){
 				num = 100;
 				System.out.println("tag a, set num over!");
-				Thread.sleep(1000);
+				Thread.sleep(5000);
 			} else {
 				num = 200;
 				System.out.println("tag b, set num over!");
@@ -52,9 +52,14 @@ public class MultiThread {
 			public void run() {
 				m2.printNum("b");
 			}
-		});		
+		});
 		
 		t1.start();
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		t2.start();
 		
 	}

@@ -1,8 +1,5 @@
 package com.jz.bigdata.myinternet.mycoucurrent.specialuse;
 
-import com.sun.jmx.snmp.tasks.ThreadService;
-import sun.nio.ch.ThreadPool;
-
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;
@@ -47,6 +44,7 @@ public class CyclicBarrierDemo{
                         System.out.println("员工【"+ finalI +"】吃完饭");
 
                         //阻塞
+                        System.out.println("员工【"+ finalI +"】前往游戏厅");
                         cyclicBarrierGame.await();
                         System.out.println("员工【"+ finalI +"】开始打游戏");
 

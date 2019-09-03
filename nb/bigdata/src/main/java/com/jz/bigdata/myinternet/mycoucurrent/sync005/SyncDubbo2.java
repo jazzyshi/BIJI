@@ -7,12 +7,12 @@ package com.jz.bigdata.myinternet.mycoucurrent.sync005;
  */
 public class SyncDubbo2 {
 
-	static class Main {
+	static class TheMain {
 		public int i = 10;
-		public synchronized void operationSup(){
+		public synchronized void operationSuper(){
 			try {
 				i--;
-				System.out.println("Main print i = " + i);
+				System.out.println("TheMain print i = " + i);
 				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
@@ -20,14 +20,14 @@ public class SyncDubbo2 {
 		}
 	}
 	
-	static class Sub extends Main {
+	static class TheSub extends TheMain {
 		public synchronized void operationSub(){
 			try {
 				while(i > 0) {
 					i--;
-					System.out.println("Sub print i = " + i);
+					System.out.println("TheSub print i = " + i);
 					Thread.sleep(100);		
-					this.operationSup();
+					this.operationSuper();
 				}
 			} catch (InterruptedException e) {
 				e.printStackTrace();
@@ -40,7 +40,7 @@ public class SyncDubbo2 {
 		Thread t1 = new Thread(new Runnable() {
 			@Override
 			public void run() {
-				Sub sub = new Sub();
+				TheSub sub = new TheSub();
 				sub.operationSub();
 			}
 		});

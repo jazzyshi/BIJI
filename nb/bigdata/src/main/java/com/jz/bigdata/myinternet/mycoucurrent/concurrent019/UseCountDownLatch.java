@@ -11,7 +11,8 @@ import java.util.concurrent.CountDownLatch;
 public class UseCountDownLatch {
 
 	public static void main(String[] args) {
-		
+
+
 		final CountDownLatch countDown = new CountDownLatch(2);
 		
 		Thread t1 = new Thread(new Runnable() {

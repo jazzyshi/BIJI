@@ -12,8 +12,9 @@ import java.util.concurrent.Executors;
  */
 public class ExchangeDemo {
     public static void main(String[] args){
+
         //交换器，交换String类型数据
-        Exchanger<String> ec = new Exchanger<>();
+        final Exchanger<String> ec = new Exchanger<>();
         //线程池
         ExecutorService threadPool = Executors.newCachedThreadPool();
         //线程1数据

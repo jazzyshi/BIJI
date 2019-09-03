@@ -46,7 +46,7 @@ public class UseFuture implements Callable<String>{
 		
 		try {
 			//这里可以做额外的数据操作，也就是主程序执行其他业务逻辑
-			System.out.println("处理实际的业务逻辑...");
+			System.out.println("处理其它实际的业务逻辑...");
 			Thread.sleep(1000);
 		} catch (Exception e) {
 			e.printStackTrace();

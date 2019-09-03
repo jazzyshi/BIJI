@@ -3,7 +3,7 @@ package com.jz.bigdata.myinternet.mycoucurrent.design015;
 import java.util.Random;
 
 /**
- * 并发编程设计模式-Master-worker模式
+ * 并发编程设计模式-MyMaster-worker模式
  */
 public class Main {
 

@@ -6,6 +6,7 @@ import java.util.List;
 public class ListAdd1 {
 
 
+	//注意volatile的左右
 	private volatile static List list = new ArrayList();
 	
 	public void add(){

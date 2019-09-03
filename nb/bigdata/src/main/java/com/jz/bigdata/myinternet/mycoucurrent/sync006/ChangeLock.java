@@ -22,7 +22,7 @@ public class ChangeLock {
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 	
 		final ChangeLock changeLock = new ChangeLock();
 		Thread t1 = new Thread(new Runnable() {
@@ -37,12 +37,9 @@ public class ChangeLock {
 				changeLock.method();
 			}
 		},"t2");
+
 		t1.start();
-		try {
-			Thread.sleep(100);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		Thread.sleep(100);
 		t2.start();
 	}
 	

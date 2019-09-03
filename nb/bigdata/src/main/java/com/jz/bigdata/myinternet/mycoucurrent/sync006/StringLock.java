@@ -23,6 +23,7 @@ public class StringLock {
 	
 	public static void main(String[] args) {
 		final StringLock stringLock = new StringLock();
+
 		Thread t1 = new Thread(new Runnable() {
 			@Override
 			public void run() {
@@ -32,7 +33,7 @@ public class StringLock {
 		Thread t2 = new Thread(new Runnable() {
 			@Override
 			public void run() {
-				stringLock.method();
+				stringLock.method();//字符串常量即使换成stringLock1也会其作用，牛逼吧
 			}
 		},"t2");
 		

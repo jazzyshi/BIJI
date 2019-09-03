@@ -15,6 +15,7 @@ public class Handler5 implements EventHandler<Trade>,WorkHandler<Trade> {
     @Override  
     public void onEvent(Trade event) throws Exception {  
     	System.out.println("handler5: get price : " + event.getPrice());
+        Thread.sleep(5000);
     	event.setPrice(event.getPrice() + 3.0);
     }  
 }  

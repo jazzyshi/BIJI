@@ -22,7 +22,8 @@ public class Consumer implements Runnable{
 				Data data = this.queue.take();
 				//进行数据处理。休眠0 - 1000毫秒模拟耗时
 				Thread.sleep(r.nextInt(1000));
-				System.out.println("当前消费线程：" + Thread.currentThread().getName() + "， 消费成功，消费数据为id: " + data.getId());
+				System.out.println("当前消费线程：" + Thread.currentThread().getName() + "， 消费成功，消费数据为id: " + data.getId()
+						+",容器现在的大小为"+this.queue.size());
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
