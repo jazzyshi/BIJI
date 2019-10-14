@@ -30,6 +30,15 @@ public class MyThread extends Thread{
 		Thread t3 = new Thread(myThread,"t3");
 		Thread t4 = new Thread(myThread,"t4");
 		Thread t5 = new Thread(myThread,"t5");
+		new Thread(myThread,"t15").start();
+		new Thread(myThread,"t25").start();
+		new Thread(myThread,"t35").start();
+		new Thread(myThread,"t45").start();
+		new Thread(myThread,"t55").start();
+		new Thread(myThread,"t65").start();
+		new Thread(myThread,"t75").start();
+
+
 		t1.start();
 		t2.start();
 		t3.start();

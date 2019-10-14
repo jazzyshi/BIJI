@@ -26,7 +26,7 @@ public class RunThread extends Thread{
 	public static void main(String[] args) throws InterruptedException {
 		RunThread rt = new RunThread();
 		rt.start();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		rt.setRunning(false);
 		System.out.println("isRunning的值已经被设置了false");
 	}

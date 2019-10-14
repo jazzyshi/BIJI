@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 在java多线程中，可以用synchronized关键字实现线程间的同步互斥工作，
  * 其实还有一个更优秀的机制去完成“同步互斥”工作，他就是Lock对象。
  * 主要学习两种锁：重入锁和读写锁，他们比synchronized更加强大，并且有嗅探锁定、多路分支等功能
- *
+ *  private Lock lock = new ReentrantLock();lock.lock();lock.unlock();
  * 初始化时可以有个参数 公平锁还是非公平锁
  * lock里的方法：自己尝试
  */

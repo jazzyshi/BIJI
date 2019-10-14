@@ -17,7 +17,7 @@ public class Optimize {
 			synchronized(this){
 				System.out.println("当前线程：" + Thread.currentThread().getName() + 
 					", 执行同步代码块，对其同步变量进行操作");
-				Thread.sleep(1000);
+				Thread.sleep(5000);
 			}
 			System.out.println("当前线程结束：" + Thread.currentThread().getName() +
 					", 执行完毕");
