@@ -18,7 +18,7 @@ public class Server implements Runnable{
 	private ByteBuffer writeBuf = ByteBuffer.allocate(1024);
 	public Server(int port){
 		try {
-			//1 打开路复用器
+			//1 打开多路复用器
 			this.seletor = Selector.open();
 			//2 打开服务器通道
 			ServerSocketChannel ssc = ServerSocketChannel.open();
@@ -62,7 +62,7 @@ public class Server implements Runnable{
 						}
 						//9 写数据
 						if(key.isWritable()){
-							//this.write(key); //ssc
+							this.write(key); //ssc
 						}
 					}
 					

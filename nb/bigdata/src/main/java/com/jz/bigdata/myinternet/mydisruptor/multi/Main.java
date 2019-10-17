@@ -1,16 +1,11 @@
 package com.jz.bigdata.myinternet.mydisruptor.multi;
 
+import com.lmax.disruptor.*;
+import com.lmax.disruptor.dsl.ProducerType;
+
 import java.util.UUID;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executors;
-
-import com.lmax.disruptor.EventFactory;
-import com.lmax.disruptor.ExceptionHandler;
-import com.lmax.disruptor.RingBuffer;
-import com.lmax.disruptor.SequenceBarrier;
-import com.lmax.disruptor.WorkerPool;
-import com.lmax.disruptor.YieldingWaitStrategy;
-import com.lmax.disruptor.dsl.ProducerType;
 
 public class Main {
 	
@@ -47,7 +42,8 @@ public class Main {
         final CountDownLatch latch = new CountDownLatch(1);
         for (int i = 0; i < 100; i++) {  
         	final Producer p = new Producer(ringBuffer);
-        	new Thread(new Runnable() {
+			int finalI = i;
+			new Thread(new Runnable() {
 				@Override
 				public void run() {
 					try {
@@ -56,7 +52,8 @@ public class Main {
 						e.printStackTrace();
 					}
 					for(int j = 0; j < 100; j ++){
-						p.onData(UUID.randomUUID().toString());
+						System.out.println("生产者"+ finalI +"序号:"+j);
+						p.onData("生产者"+ finalI +"序号:"+j+"	"+UUID.randomUUID().toString());
 					}
 				}
 			}).start();
@@ -66,6 +63,7 @@ public class Main {
         latch.countDown();
         Thread.sleep(5000);
         System.out.println("总数:" + consumers[0].getCount() );
+
 	}
 	
 	static class IntEventExceptionHandler implements ExceptionHandler {  

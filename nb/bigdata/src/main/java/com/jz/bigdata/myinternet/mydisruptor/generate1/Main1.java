@@ -1,15 +1,11 @@
 package com.jz.bigdata.myinternet.mydisruptor.generate1;
 
+import com.lmax.disruptor.*;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-
-import com.lmax.disruptor.BatchEventProcessor;
-import com.lmax.disruptor.EventFactory;
-import com.lmax.disruptor.RingBuffer;
-import com.lmax.disruptor.SequenceBarrier;
-import com.lmax.disruptor.YieldingWaitStrategy;
 
 public class Main1 {  
    
@@ -28,7 +24,11 @@ public class Main1 {
                 return new Trade();  
             }  
         }, BUFFER_SIZE, new YieldingWaitStrategy());  
-        
+
+
+
+        RingBuffer.createSingleProducer(() -> {return new Trade();},BUFFER_SIZE,new YieldingWaitStrategy());
+
         //创建线程池  
         ExecutorService executors = Executors.newFixedThreadPool(THREAD_NUMBERS);  
         
@@ -61,7 +61,7 @@ public class Main1 {
         }); 
         
         future.get();//等待生产者结束  
-        Thread.sleep(1000);//等上1秒，等消费都处理完成  
+        Thread.sleep(5000);//等上1秒，等消费都处理完成
         transProcessor.halt();//通知事件(或者说消息)处理器 可以结束了（并不是马上结束!!!）  
         executors.shutdown();//终止线程  
     }  

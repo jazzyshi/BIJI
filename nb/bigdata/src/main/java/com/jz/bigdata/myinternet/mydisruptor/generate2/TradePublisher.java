@@ -31,7 +31,7 @@ public class TradePublisher implements Runnable {
 }  
   
 class TradeEventTranslator implements EventTranslator<Trade>{  
-    
+
 	private Random random=new Random();  
     
 	@Override  

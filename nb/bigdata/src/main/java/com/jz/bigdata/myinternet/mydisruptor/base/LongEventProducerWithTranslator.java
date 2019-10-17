@@ -1,9 +1,9 @@
 package com.jz.bigdata.myinternet.mydisruptor.base;
 
-import java.nio.ByteBuffer;
-
 import com.lmax.disruptor.EventTranslatorOneArg;
 import com.lmax.disruptor.RingBuffer;
+
+import java.nio.ByteBuffer;
 
 /**
  * Disruptor 3.0提供了lambda式的API。这样可以把一些复杂的操作放在Ring Buffer，
@@ -17,6 +17,8 @@ import com.lmax.disruptor.RingBuffer;
  */
 public class LongEventProducerWithTranslator {
 
+	private final RingBuffer<LongEvent> ringBuffer;
+
 	//一个translator可以看做一个事件初始化器，publicEvent方法会调用它
 	//填充Event
 	private static final EventTranslatorOneArg<LongEvent, ByteBuffer> TRANSLATOR = 
@@ -27,8 +29,7 @@ public class LongEventProducerWithTranslator {
 				}
 			};
 	
-	private final RingBuffer<LongEvent> ringBuffer;
-	
+
 	public LongEventProducerWithTranslator(RingBuffer<LongEvent> ringBuffer) {
 		this.ringBuffer = ringBuffer;
 	}

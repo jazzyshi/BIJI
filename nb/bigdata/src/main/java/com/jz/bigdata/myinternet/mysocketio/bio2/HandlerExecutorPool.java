@@ -20,7 +20,5 @@ public class HandlerExecutorPool {
 	public void execute(Runnable task){
 		this.executor.execute(task);
 	}
-	
-	
-	
+
 }

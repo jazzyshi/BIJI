@@ -49,8 +49,6 @@ public class Server {
 			}
 			server = null;				
 		}
-		
-	
 	
 	}
 	

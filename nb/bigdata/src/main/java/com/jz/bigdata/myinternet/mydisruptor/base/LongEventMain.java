@@ -1,13 +1,13 @@
 package com.jz.bigdata.myinternet.mydisruptor.base;
 
-import java.nio.ByteBuffer;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 import com.lmax.disruptor.RingBuffer;
 import com.lmax.disruptor.YieldingWaitStrategy;
 import com.lmax.disruptor.dsl.Disruptor;
 import com.lmax.disruptor.dsl.ProducerType;
+
+import java.nio.ByteBuffer;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class LongEventMain {
 
@@ -47,7 +47,7 @@ public class LongEventMain {
 		for(long l = 0; l<100; l++){
 			byteBuffer.putLong(0, l);
 			producer.onData(byteBuffer);
-			//Thread.sleep(1000);
+			Thread.sleep(1000);
 		}
 
 		
