@@ -1,0 +1,10 @@
+2019-11-08 21:58:44 [WARN]-[org.apache.curator.CuratorZookeeperClient] session timeout [5000] is less than connection timeout [15000]
+  2019-11-08 21:58:44 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
+  2019-11-08 21:59:13 [WARN]-[org.apache.curator.CuratorZookeeperClient] session timeout [5000] is less than connection timeout [15000]
+  2019-11-08 21:59:13 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
+  2019-11-08 21:59:25 [WARN]-[org.apache.curator.CuratorZookeeperClient] session timeout [5000] is less than connection timeout [15000]
+  2019-11-08 21:59:25 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
+  2019-11-08 22:01:02 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
+  2019-11-08 23:41:55 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
+  2019-11-08 23:43:35 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
+  

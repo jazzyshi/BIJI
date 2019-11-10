@@ -35,11 +35,11 @@ public class Server {
 		});
 		
 		//4 进行绑定 
-		ChannelFuture cf1 = b.bind(8888).sync();
-		//ChannelFuture cf2 = b.bind(8764).sync();
+		ChannelFuture cf1 = b.bind(8765).sync();
+		ChannelFuture cf2 = b.bind(8764).sync();
 		//5 等待关闭
 		cf1.channel().closeFuture().sync();
-		//cf2.channel().closeFuture().sync();
+		cf2.channel().closeFuture().sync();
 		pGroup.shutdownGracefully();
 		cGroup.shutdownGracefully();
 	}

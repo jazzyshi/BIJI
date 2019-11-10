@@ -24,19 +24,19 @@ public class Client {
 			}
 		});
 		
-		ChannelFuture cf1 = b.connect("127.0.0.1", 8888).sync();
-		//ChannelFuture cf2 = b.connect("127.0.0.1", 8764).sync();
+		ChannelFuture cf1 = b.connect("127.0.0.1", 8765).sync();
+		ChannelFuture cf2 = b.connect("127.0.0.1", 8764).sync();
 		//发送消息
 		Thread.sleep(1000);
-		cf1.channel().writeAndFlush(Unpooled.copiedBuffer("777".getBytes()));
-		cf1.channel().writeAndFlush(Unpooled.copiedBuffer("666".getBytes()));
-		//cf2.channel().writeAndFlush(Unpooled.copiedBuffer("888".getBytes()));
+		cf1.channel().writeAndFlush(Unpooled.copiedBuffer("hello 8765".getBytes()));
+		cf1.channel().writeAndFlush(Unpooled.copiedBuffer("hello 8765".getBytes()));
+		cf2.channel().writeAndFlush(Unpooled.copiedBuffer("hello 8764".getBytes()));
 		Thread.sleep(2000);
-		cf1.channel().writeAndFlush(Unpooled.copiedBuffer("888".getBytes()));
+		cf1.channel().writeAndFlush(Unpooled.copiedBuffer("hello 8765 2".getBytes()));
 		//cf2.channel().writeAndFlush(Unpooled.copiedBuffer("666".getBytes()));
 		
 		cf1.channel().closeFuture().sync();
-		//cf2.channel().closeFuture().sync();
+		cf2.channel().closeFuture().sync();
 		group.shutdownGracefully();
 		
 		

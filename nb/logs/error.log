@@ -1,20 +1,161 @@
-2019-11-08 17:06:05 [ERROR]-[org.apache.zookeeper.ClientCnxn] Error while calling watcher 
+2019-11-09 00:47:55 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 172。16.106.8:2181
+  java.net.UnknownHostException: 172¡£16.106
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-11-09 00:47:56 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 172。16.106.8:2181
+  java.net.UnknownHostException: 172。16.106.8
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-11-09 00:47:57 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 172。16.106.8:2181
+  java.net.UnknownHostException: 172。16.106.8
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-11-09 00:47:58 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 172。16.106.8:2181
+  java.net.UnknownHostException: 172。16.106.8
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-11-09 00:47:59 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 172。16.106.8:2181
+  java.net.UnknownHostException: 172。16.106.8
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-11-09 00:48:00 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 172。16.106.8:2181
+  java.net.UnknownHostException: 172。16.106.8
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-11-09 00:48:01 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 172。16.106.8:2181
+  java.net.UnknownHostException: 172。16.106.8
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-11-09 00:48:02 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 172。16.106.8:2181
+  java.net.UnknownHostException: 172。16.106.8
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-11-09 00:48:03 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 172。16.106.8:2181
+  java.net.UnknownHostException: 172。16.106.8
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-11-09 00:48:05 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 172。16.106.8:2181
+  java.net.UnknownHostException: 172。16.106.8
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-11-09 00:53:43 [ERROR]-[org.apache.curator.framework.recipes.cache.NodeCache] Calling listener
   java.lang.NullPointerException
-	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
+	at com.jz.bigdata.myinternet.myzk.curator.watcher.CuratorWatcher1$1.nodeChanged(CuratorWatcher1.java:50)
+	at org.apache.curator.framework.recipes.cache.NodeCache$4.apply(NodeCache.java:294)
+	at org.apache.curator.framework.recipes.cache.NodeCache$4.apply(NodeCache.java:288)
+	at org.apache.curator.framework.listen.ListenerContainer$1.run(ListenerContainer.java:92)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutorService.execute(MoreExecutors.java:299)
+	at org.apache.curator.framework.listen.ListenerContainer.forEach(ListenerContainer.java:84)
+	at org.apache.curator.framework.recipes.cache.NodeCache.setNewData(NodeCache.java:286)
+	at org.apache.curator.framework.recipes.cache.NodeCache.processBackgroundResult(NodeCache.java:262)
+	at org.apache.curator.framework.recipes.cache.NodeCache.access$300(NodeCache.java:54)
+	at org.apache.curator.framework.recipes.cache.NodeCache$3.processResult(NodeCache.java:112)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.sendToBackgroundCallback(CuratorFrameworkImpl.java:728)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.processBackgroundOperation(CuratorFrameworkImpl.java:505)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$1.processResult(ExistsBuilderImpl.java:123)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:592)
 	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
-2019-11-08 17:06:23 [ERROR]-[org.apache.zookeeper.ClientCnxn] Error while calling watcher 
+2019-11-09 00:55:28 [ERROR]-[org.apache.curator.framework.recipes.cache.NodeCache] Calling listener
   java.lang.NullPointerException
-	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
+	at com.jz.bigdata.myinternet.myzk.curator.watcher.CuratorWatcher1$1.nodeChanged(CuratorWatcher1.java:50)
+	at org.apache.curator.framework.recipes.cache.NodeCache$4.apply(NodeCache.java:294)
+	at org.apache.curator.framework.recipes.cache.NodeCache$4.apply(NodeCache.java:288)
+	at org.apache.curator.framework.listen.ListenerContainer$1.run(ListenerContainer.java:92)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutorService.execute(MoreExecutors.java:299)
+	at org.apache.curator.framework.listen.ListenerContainer.forEach(ListenerContainer.java:84)
+	at org.apache.curator.framework.recipes.cache.NodeCache.setNewData(NodeCache.java:286)
+	at org.apache.curator.framework.recipes.cache.NodeCache.processBackgroundResult(NodeCache.java:262)
+	at org.apache.curator.framework.recipes.cache.NodeCache.access$300(NodeCache.java:54)
+	at org.apache.curator.framework.recipes.cache.NodeCache$3.processResult(NodeCache.java:112)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.sendToBackgroundCallback(CuratorFrameworkImpl.java:728)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.processBackgroundOperation(CuratorFrameworkImpl.java:505)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$1.processResult(ExistsBuilderImpl.java:123)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:592)
 	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
-2019-11-08 17:06:41 [ERROR]-[org.apache.zookeeper.ClientCnxn] Error while calling watcher 
+2019-11-09 00:58:30 [ERROR]-[org.apache.curator.framework.recipes.cache.NodeCache] Calling listener
   java.lang.NullPointerException
-	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
+	at com.jz.bigdata.myinternet.myzk.curator.watcher.CuratorWatcher1$1.nodeChanged(CuratorWatcher1.java:50)
+	at org.apache.curator.framework.recipes.cache.NodeCache$4.apply(NodeCache.java:294)
+	at org.apache.curator.framework.recipes.cache.NodeCache$4.apply(NodeCache.java:288)
+	at org.apache.curator.framework.listen.ListenerContainer$1.run(ListenerContainer.java:92)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutorService.execute(MoreExecutors.java:299)
+	at org.apache.curator.framework.listen.ListenerContainer.forEach(ListenerContainer.java:84)
+	at org.apache.curator.framework.recipes.cache.NodeCache.setNewData(NodeCache.java:286)
+	at org.apache.curator.framework.recipes.cache.NodeCache.processBackgroundResult(NodeCache.java:262)
+	at org.apache.curator.framework.recipes.cache.NodeCache.access$300(NodeCache.java:54)
+	at org.apache.curator.framework.recipes.cache.NodeCache$3.processResult(NodeCache.java:112)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.sendToBackgroundCallback(CuratorFrameworkImpl.java:728)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.processBackgroundOperation(CuratorFrameworkImpl.java:505)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$1.processResult(ExistsBuilderImpl.java:123)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:592)
 	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
-2019-11-08 17:06:59 [ERROR]-[org.apache.zookeeper.ClientCnxn] Error while calling watcher 
+2019-11-09 01:00:52 [ERROR]-[org.apache.curator.framework.recipes.cache.NodeCache] Calling listener
   java.lang.NullPointerException
-	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
-	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
-2019-11-08 17:07:17 [ERROR]-[org.apache.zookeeper.ClientCnxn] Error while calling watcher 
-  java.lang.NullPointerException
-	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
+	at com.jz.bigdata.myinternet.myzk.curator.watcher.CuratorWatcher1$1.nodeChanged(CuratorWatcher1.java:50)
+	at org.apache.curator.framework.recipes.cache.NodeCache$4.apply(NodeCache.java:294)
+	at org.apache.curator.framework.recipes.cache.NodeCache$4.apply(NodeCache.java:288)
+	at org.apache.curator.framework.listen.ListenerContainer$1.run(ListenerContainer.java:92)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutorService.execute(MoreExecutors.java:299)
+	at org.apache.curator.framework.listen.ListenerContainer.forEach(ListenerContainer.java:84)
+	at org.apache.curator.framework.recipes.cache.NodeCache.setNewData(NodeCache.java:286)
+	at org.apache.curator.framework.recipes.cache.NodeCache.processBackgroundResult(NodeCache.java:262)
+	at org.apache.curator.framework.recipes.cache.NodeCache.access$300(NodeCache.java:54)
+	at org.apache.curator.framework.recipes.cache.NodeCache$3.processResult(NodeCache.java:112)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.sendToBackgroundCallback(CuratorFrameworkImpl.java:728)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.processBackgroundOperation(CuratorFrameworkImpl.java:505)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$1.processResult(ExistsBuilderImpl.java:123)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:592)
 	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
