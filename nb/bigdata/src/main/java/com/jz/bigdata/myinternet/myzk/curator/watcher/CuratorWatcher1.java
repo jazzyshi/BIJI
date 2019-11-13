@@ -1,26 +1,18 @@
 package com.jz.bigdata.myinternet.myzk.curator.watcher;
 
-import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
-import org.apache.curator.framework.api.BackgroundCallback;
-import org.apache.curator.framework.api.CuratorEvent;
 import org.apache.curator.framework.recipes.cache.NodeCache;
 import org.apache.curator.framework.recipes.cache.NodeCacheListener;
 import org.apache.curator.retry.ExponentialBackoffRetry;
-import org.apache.zookeeper.CreateMode;
-import org.apache.zookeeper.data.Stat;
 
 public class CuratorWatcher1 {
 	
 	/** zookeeper地址 */
 	static final String CONNECT_ADDR = "172.16.106.8:2181";
 	/** session超时时间 */
-	static final int SESSION_OUTTIME = 5000;//ms 
+	static final int SESSION_OUTTIME = 3000;//ms
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -58,6 +50,7 @@ public class CuratorWatcher1 {
 		cf.create().forPath("/super", "123".getBytes());
 
 		Thread.sleep(1000);
+		//子节点也不起作用
 		cf.create().forPath("/super/c1", "eee".getBytes());
 
 		Thread.sleep(1000);

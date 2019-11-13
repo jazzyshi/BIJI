@@ -2,19 +2,14 @@ package com.jz.bigdata.myinternet.myzk.curator.base;
 
 
 import org.apache.curator.RetryPolicy;
-
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
-import org.apache.curator.framework.api.BackgroundCallback;
-import org.apache.curator.framework.api.CuratorEvent;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.Stat;
 
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class CuratorBase {
 	
@@ -39,11 +34,12 @@ public class CuratorBase {
 		
 		System.out.println(ZooKeeper.States.CONNECTED);
 		System.out.println(cf.getState());
-		
+
+
 		// 新加、删除
 
 		//4 建立节点 指定节点类型（不加withMode默认为持久类型节点）、路径、数据内容
-		//cf.create().creatingParentsIfNeeded().withMode(CreateMode.PERSISTENT).forPath("/super/c1","c1内容".getBytes());
+		cf.create().creatingParentsIfNeeded().withMode(CreateMode.PERSISTENT).forPath("/super/c1","c1内容".getBytes());
 		//5 删除节点
 		//cf.delete().guaranteed().deletingChildrenIfNeeded().forPath("/super");
 
@@ -88,12 +84,8 @@ public class CuratorBase {
 		Stat stat = cf.checkExists().forPath("/super/c3");
 		System.out.println(stat);
 		
-		Thread.sleep(2000);
-		cf.delete().guaranteed().deletingChildrenIfNeeded().forPath("/super");
+//		Thread.sleep(2000);
+//		cf.delete().guaranteed().deletingChildrenIfNeeded().forPath("/super");
 
-		
-		
-		//cf.delete().guaranteed().deletingChildrenIfNeeded().forPath("/super");
-		
 	}
 }

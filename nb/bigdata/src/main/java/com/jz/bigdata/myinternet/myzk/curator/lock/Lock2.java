@@ -1,15 +1,14 @@
 package com.jz.bigdata.myinternet.myzk.curator.lock;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.locks.ReentrantLock;
-
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.apache.curator.retry.ExponentialBackoffRetry;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.CountDownLatch;
 
 
 public class Lock2 {
@@ -44,7 +43,7 @@ public class Lock2 {
 		cf.start();
 		
 		//4 分布式锁
-		final InterProcessMutex lock = new InterProcessMutex(cf, "/super");
+		final InterProcessMutex lock = new InterProcessMutex(cf, "/super1");
 		//final ReentrantLock reentrantLock = new ReentrantLock();
 		final CountDownLatch countdown = new CountDownLatch(1);
 		

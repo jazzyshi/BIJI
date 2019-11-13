@@ -1,23 +1,13 @@
 package com.jz.bigdata.myinternet.myzk.curator.watcher;
 
-import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
-import org.apache.curator.framework.api.BackgroundCallback;
-import org.apache.curator.framework.api.CuratorEvent;
-import org.apache.curator.framework.recipes.cache.NodeCache;
-import org.apache.curator.framework.recipes.cache.NodeCacheListener;
 import org.apache.curator.framework.recipes.cache.PathChildrenCache;
+import org.apache.curator.framework.recipes.cache.PathChildrenCache.StartMode;
 import org.apache.curator.framework.recipes.cache.PathChildrenCacheEvent;
 import org.apache.curator.framework.recipes.cache.PathChildrenCacheListener;
-import org.apache.curator.framework.recipes.cache.PathChildrenCache.StartMode;
 import org.apache.curator.retry.ExponentialBackoffRetry;
-import org.apache.zookeeper.CreateMode;
-import org.apache.zookeeper.data.Stat;
 
 public class CuratorWatcher2 {
 	
@@ -29,7 +19,7 @@ public class CuratorWatcher2 {
 	public static void main(String[] args) throws Exception {
 		
 		//1 重试策略：初试时间为1s 重试10次
-		RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 10);
+		RetryPolicy retryPolicy = new ExponentialBackoffRetry(5000, 10);
 		//2 通过工厂创建连接
 		CuratorFramework cf = CuratorFrameworkFactory.builder()
 					.connectString(CONNECT_ADDR)
@@ -89,7 +79,7 @@ public class CuratorWatcher2 {
 		Thread.sleep(1000);
 		cf.delete().deletingChildrenIfNeeded().forPath("/super");
 		
-		Thread.sleep(Integer.MAX_VALUE);
+		//Thread.sleep(Integer.MAX_VALUE);
 		
 
 	}

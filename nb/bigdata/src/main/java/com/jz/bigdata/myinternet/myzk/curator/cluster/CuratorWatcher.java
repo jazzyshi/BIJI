@@ -1,27 +1,14 @@
 package com.jz.bigdata.myinternet.myzk.curator.cluster;
 
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.CountDownLatch;
-
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.cache.PathChildrenCache;
+import org.apache.curator.framework.recipes.cache.PathChildrenCache.StartMode;
 import org.apache.curator.framework.recipes.cache.PathChildrenCacheEvent;
 import org.apache.curator.framework.recipes.cache.PathChildrenCacheListener;
-import org.apache.curator.framework.recipes.cache.PathChildrenCache.StartMode;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
-import org.apache.zookeeper.KeeperException;
-import org.apache.zookeeper.WatchedEvent;
-import org.apache.zookeeper.Watcher;
-import org.apache.zookeeper.Watcher.Event.EventType;
-import org.apache.zookeeper.Watcher.Event.KeeperState;
-import org.apache.zookeeper.ZooDefs.Ids;
-import org.apache.zookeeper.ZooKeeper;
 
 public class CuratorWatcher {
 
@@ -29,8 +16,8 @@ public class CuratorWatcher {
 	static final String PARENT_PATH = "/super";
 	
 	/** zookeeper服务器地址 */
-	public static final String CONNECT_ADDR = "172.16.106.8:2181";	/** 定义session失效时间 */
-	
+	public static final String CONNECT_ADDR = "172.16.106.8:2181";
+	/** 定义session失效时间 */
 	public static final int SESSION_TIMEOUT = 30000;
 	
 	public CuratorWatcher() throws Exception{
