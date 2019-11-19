@@ -1,5 +1,6 @@
 package com.jz.bigdata.myinternet.mysocketio.thenetty.serial;
 
+import com.jz.bigdata.myinternet.mysocketio.thenetty.utils.MarshallingCodeCFactory;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

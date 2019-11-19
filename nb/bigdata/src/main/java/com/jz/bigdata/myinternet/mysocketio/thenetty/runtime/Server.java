@@ -1,5 +1,6 @@
 package com.jz.bigdata.myinternet.mysocketio.thenetty.runtime;
 
+import com.jz.bigdata.myinternet.mysocketio.thenetty.utils.MarshallingCodeCFactory;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -32,8 +33,8 @@ public class Server {
 			protected void initChannel(SocketChannel sc) throws Exception {
 				sc.pipeline().addLast(MarshallingCodeCFactory.buildMarshallingDecoder());
 				sc.pipeline().addLast(MarshallingCodeCFactory.buildMarshallingEncoder());
-				//设置超时时间
-				sc.pipeline().addLast(new ReadTimeoutHandler(5)); 
+				//超时handler（当服务器端与客户端在指定时间以上没有任何进行通信，则会关闭响应的通道，主要为减小服务端资源占用）
+				sc.pipeline().addLast(new ReadTimeoutHandler(5));
 				sc.pipeline().addLast(new ServerHandler());
 			}
 		});

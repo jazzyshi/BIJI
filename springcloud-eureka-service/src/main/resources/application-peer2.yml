@@ -1,0 +1,13 @@
+
+server:
+  port: 9091
+
+eureka:
+  instance:
+    hostname: localhost
+    appname: spring-cloud-eureka-server
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:9090/eureka

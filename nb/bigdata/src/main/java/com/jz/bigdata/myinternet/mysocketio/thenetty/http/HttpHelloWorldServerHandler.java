@@ -14,7 +14,7 @@ import static org.apache.http.HttpHeaders.CONTENT_LENGTH;
 
 
 public class HttpHelloWorldServerHandler extends ChannelInboundHandlerAdapter{
-      private static final byte[] CONTENT = { 'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd' };
+      private static final byte[] CONTENT = "老弟，来了".getBytes();
   
       @Override
       public void channelReadComplete(ChannelHandlerContext ctx) {

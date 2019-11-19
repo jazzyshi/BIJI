@@ -1,23 +1,14 @@
 package com.jz.bigdata.myinternet.mysocketio.thenetty.heartbeat;
 
-import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.ReferenceCountUtil;
 
 import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
-
-import org.hyperic.sigar.CpuPerc;
-import org.hyperic.sigar.Mem;
-import org.hyperic.sigar.Sigar;
-import org.hyperic.sigar.Swap;
 
 
 public class ClienHeartBeattHandler extends ChannelInboundHandlerAdapter {
@@ -47,7 +38,7 @@ public class ClienHeartBeattHandler extends ChannelInboundHandlerAdapter {
         		String ret = (String)msg;
         		if(SUCCESS_KEY.equals(ret)){
         	    	// 握手成功，主动发送心跳消息
-        	    	this.heartBeat = this.scheduler.scheduleWithFixedDelay(new HeartBeatTask(ctx), 0, 2, TimeUnit.SECONDS);
+        	    	this.heartBeat = this.scheduler.scheduleWithFixedDelay(new HeartBeatTask(ctx), 3, 2, TimeUnit.SECONDS);
         		    System.out.println(msg);    			
         		}
         		else {
@@ -68,27 +59,28 @@ public class ClienHeartBeattHandler extends ChannelInboundHandlerAdapter {
 	
 		@Override
 		public void run() {
+			System.out.println("执行中");
 			try {
 			    RequestInfo info = new RequestInfo();
 			    //ip
 			    info.setIp(addr.getHostAddress());
-		        Sigar sigar = new Sigar();
-		        //cpu prec
-		        CpuPerc cpuPerc = sigar.getCpuPerc();
-		        HashMap<String, Object> cpuPercMap = new HashMap<String, Object>();
-		        cpuPercMap.put("combined", cpuPerc.getCombined());
-		        cpuPercMap.put("user", cpuPerc.getUser());
-		        cpuPercMap.put("sys", cpuPerc.getSys());
-		        cpuPercMap.put("wait", cpuPerc.getWait());
-		        cpuPercMap.put("idle", cpuPerc.getIdle());
-		        // memory
-		        Mem mem = sigar.getMem();
-				HashMap<String, Object> memoryMap = new HashMap<String, Object>();
-				memoryMap.put("total", mem.getTotal() / 1024L);
-				memoryMap.put("used", mem.getUsed() / 1024L);
-				memoryMap.put("free", mem.getFree() / 1024L);
-				info.setCpuPercMap(cpuPercMap);
-			    info.setMemoryMap(memoryMap);
+//		        Sigar sigar = new Sigar();
+//		        //cpu prec
+//		        CpuPerc cpuPerc = sigar.getCpuPerc();
+//		        HashMap<String, Object> cpuPercMap = new HashMap<String, Object>();
+//		        cpuPercMap.put("combined", cpuPerc.getCombined());
+//		        cpuPercMap.put("user", cpuPerc.getUser());
+//		        cpuPercMap.put("sys", cpuPerc.getSys());
+//		        cpuPercMap.put("wait", cpuPerc.getWait());
+//		        cpuPercMap.put("idle", cpuPerc.getIdle());
+//		        // memory
+//		        Mem mem = sigar.getMem();
+//				HashMap<String, Object> memoryMap = new HashMap<String, Object>();
+//				memoryMap.put("total", mem.getTotal() / 1024L);
+//				memoryMap.put("used", mem.getUsed() / 1024L);
+//				memoryMap.put("free", mem.getFree() / 1024L);
+//				info.setCpuPercMap(cpuPercMap);
+//			    info.setMemoryMap(memoryMap);
 			    ctx.writeAndFlush(info);
 			    
 			} catch (Exception e) {

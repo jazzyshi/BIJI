@@ -26,7 +26,7 @@ public class Client {
 			protected void initChannel(SocketChannel sc) throws Exception {
 				//
 				ByteBuf buf = Unpooled.copiedBuffer("$_".getBytes());
-				sc.pipeline().addLast(new DelimiterBasedFrameDecoder(2, buf));
+				sc.pipeline().addLast(new DelimiterBasedFrameDecoder(1024, buf));
 				//读的时候可以设置为string,write的时候只能buf
 				sc.pipeline().addLast(new StringDecoder());
 				sc.pipeline().addLast(new ClientHandler());
