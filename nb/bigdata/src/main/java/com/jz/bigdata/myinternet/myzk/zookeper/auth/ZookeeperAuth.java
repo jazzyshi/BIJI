@@ -16,13 +16,15 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Zookeeper 节点授权
+ * schema(ip/Digest/world/super)
+ * 授权对象（192.168.1.1/11 , root:root /，world:anyone， super）
  * @author（alienware）
  * @since 2015-6-14
  */
 public class ZookeeperAuth implements Watcher {
 
 	/** 连接地址 */
-	final static String CONNECT_ADDR = "172.16.106.8:2181";
+	final static String CONNECT_ADDR = "host10:2181,host20:2181,host30:2181";
 	/** 测试路径 */
 	final static String PATH = "/testAuth";
 	final static String PATH_DEL = "/testAuth/delNode";

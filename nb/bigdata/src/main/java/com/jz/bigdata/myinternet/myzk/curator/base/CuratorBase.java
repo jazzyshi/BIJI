@@ -5,7 +5,6 @@ import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
-import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.Stat;
 
@@ -14,7 +13,7 @@ import java.util.List;
 public class CuratorBase {
 	
 	/** zookeeper地址 */
-	static final String CONNECT_ADDR = "172.16.106.8:2181";
+	static final String CONNECT_ADDR = "host10:2181";
 	/** session超时时间 */
 	static final int SESSION_OUTTIME = 15000;//ms
 	
@@ -39,7 +38,7 @@ public class CuratorBase {
 		// 新加、删除
 
 		//4 建立节点 指定节点类型（不加withMode默认为持久类型节点）、路径、数据内容
-		cf.create().creatingParentsIfNeeded().withMode(CreateMode.PERSISTENT).forPath("/super/c1","c1内容".getBytes());
+	//	cf.create().creatingParentsIfNeeded().withMode(CreateMode.PERSISTENT).forPath("/super/c1","c1内容".getBytes());
 		//5 删除节点
 		//cf.delete().guaranteed().deletingChildrenIfNeeded().forPath("/super");
 
