@@ -1,17 +1,17 @@
 package com.jz.bigdata.myinternet.myzk.curator.barrier;
 
-import java.util.Random;
-
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.barriers.DistributedDoubleBarrier;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 
+import java.util.Random;
+
 public class CuratorBarrier1 {
 
 	/** zookeeper地址 */
-	static final String CONNECT_ADDR = "172.16.106.8:2181";
+	static final String CONNECT_ADDR = "host10:2181";
 	/** session超时时间 */
 	static final int SESSION_OUTTIME = 5000;//ms 
 	

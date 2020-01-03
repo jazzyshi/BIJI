@@ -14,7 +14,7 @@ import java.util.concurrent.CountDownLatch;
 public class Lock2 {
 
 	/** zookeeper地址 */
-	static final String CONNECT_ADDR = "172.16.106.8:2181";
+	static final String CONNECT_ADDR = "host10:2181";
 	/** session超时时间 */
 	static final int SESSION_OUTTIME = 5000;//ms 
 	
@@ -44,7 +44,7 @@ public class Lock2 {
 		
 		//4 分布式锁
 		final InterProcessMutex lock = new InterProcessMutex(cf, "/super1");
-		//final ReentrantLock reentrantLock = new ReentrantLock();
+		//final ReentrantLock reentrantLock = new ReentrantLock();//在分布式的时候会有问题
 		final CountDownLatch countdown = new CountDownLatch(1);
 		
 		for(int i = 0; i < 10; i++){

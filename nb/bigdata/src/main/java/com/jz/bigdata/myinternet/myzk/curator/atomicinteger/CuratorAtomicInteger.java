@@ -11,7 +11,7 @@ import org.apache.curator.retry.RetryNTimes;
 public class CuratorAtomicInteger {
 
 	/** zookeeper地址 */
-	static final String CONNECT_ADDR = "172.16.106.8:2181";
+	static final String CONNECT_ADDR = "host10:2181";
 	/** session超时时间 */
 	static final int SESSION_OUTTIME = 5000;//ms 
 	
@@ -35,9 +35,14 @@ public class CuratorAtomicInteger {
 				new DistributedAtomicInteger(cf, "/super", new RetryNTimes(3, 1000));
 		
 		AtomicValue<Integer> value = atomicIntger.add(1);
+		AtomicValue<Integer> value1 = atomicIntger.add(1);
 		System.out.println(value.succeeded());
 		System.out.println(value.postValue());	//最新值
 		System.out.println(value.preValue());	//原始值
-		
+		System.out.println(value1.succeeded());
+		System.out.println(value1.postValue());	//最新值
+		System.out.println(value1.preValue());	//原始值
+
+
 	}
 }

@@ -26,7 +26,7 @@ public class ZooKeeperWatcher implements Watcher {
 	/** 定义session失效时间 */
 	private static final int SESSION_TIMEOUT = 10000;
 	/** zookeeper服务器地址 */
-	private static final String CONNECTION_ADDR = "172.16.106.8:2181";
+	private static final String CONNECTION_ADDR = "192.168.170.10:2181";
 	/** zk父路径设置 */
 	private static final String PARENT_PATH = "/testWatch";
 	/** zk子路径设置 */
@@ -292,7 +292,7 @@ public class ZooKeeperWatcher implements Watcher {
 			
 			// 读取数据
 			System.out.println("---------------------- read parent ----------------------------");
-			//zkWatch.readData(PARENT_PATH, true);
+			zkWatch.readData(PARENT_PATH, true);
 			
 			// 读取子节点
 			System.out.println("---------------------- read children path ----------------------------");

@@ -13,9 +13,9 @@ import java.util.concurrent.CountDownLatch;
 public class ZookeeperBase {
 
 	/** zookeeper地址 */
-	static final String CONNECT_ADDR = "172.16.106.8:2181";
+	static final String CONNECT_ADDR = "host10:2181";
 	/** session超时时间 */
-	static final int SESSION_OUTTIME = 2000;//ms 
+	static final int SESSION_OUTTIME = 10000;//ms
 	/** 信号量，阻塞程序执行，用于等待zookeeper连接成功，发送成功信号 */
 	static final CountDownLatch connectedSemaphore = new CountDownLatch(1);
 	
@@ -43,10 +43,10 @@ public class ZookeeperBase {
 		
 		System.out.println("..");
 		//创建父节点
-		//zk.create("/testRoot", "testRoot".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+		zk.create("/testRoot", "testRoot".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
 		
 		//创建子节点
-		//zk.create("/testRoot/children", "children data".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+		zk.create("/testRoot/children", "children data".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
 
 		
 		//获取节点洗信息
