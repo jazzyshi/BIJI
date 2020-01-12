@@ -18,7 +18,6 @@ public class ClientHandler extends ChannelInboundHandlerAdapter{
 			
 			String body = new String(req, "utf-8");
 			System.out.println("Client :" + body );
-			String response = "收到服务器端的返回信息：" + body;
 		} finally {//没有write操作必须释放msg
 			ReferenceCountUtil.release(msg);
 		}
@@ -27,6 +26,7 @@ public class ClientHandler extends ChannelInboundHandlerAdapter{
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
 			throws Exception {
+		cause.printStackTrace();
 		ctx.close();
 	}
 

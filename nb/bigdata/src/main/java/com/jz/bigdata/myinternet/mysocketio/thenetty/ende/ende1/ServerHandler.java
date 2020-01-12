@@ -15,7 +15,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
 
-        //应为在这个管道之前已经设置了new StringDecoder() 字符串形式的解码 可以直接使用字符串
+        //因为在这个管道之前已经设置了new StringDecoder() 字符串形式的解码 可以直接使用字符串
         System.out.println("Server :" +  msg);
         String response = "服务器响应：" + msg + "$_";
         //写的时候必须是buffer,并且会自动释放msg，不需要手动释放

@@ -32,21 +32,21 @@ public class JZClient {
     public void start() throws InterruptedException {
         EventLoopGroup group = new NioEventLoopGroup();
         try{
-            //1.创建bootstrap
+            //1.创建bootstrap（服务端是ServerBootstrap）
             Bootstrap b = new Bootstrap();
             b.group(group)
                     .channel(NioSocketChannel.class)
-                    .remoteAddress(new InetSocketAddress(host,port))
+                    .remoteAddress(new InetSocketAddress(host,port))//服务端是new InetSocketAddress(port)
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
-                        protected void initChannel(SocketChannel socketChannel) throws Exception {
+                        protected void initChannel(SocketChannel socketChannel) throws Exception {//服务器端是childHandler？？？？？？
                                 socketChannel.pipeline().addLast(new JZClientHandle());
                         }
                     });
-            ChannelFuture f = b.connect().sync();
+            ChannelFuture f = b.connect().sync();//这个地方是connect
             f.channel().closeFuture().sync();
         }finally{
-            group.shutdownGracefully();
+            group.shutdownGracefully().sync();
         }
     }
 

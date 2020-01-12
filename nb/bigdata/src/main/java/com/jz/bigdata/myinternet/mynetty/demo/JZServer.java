@@ -29,10 +29,10 @@ public class JZServer {
 
     public void start() throws Exception{
         final JZServerHandle serverHandle = new JZServerHandle();
-        //1.创建EventLoopGroup
+        //1.创建EventLoopGroup的实例以进行事件的处理(如接受新连接以及读/写数据)
         EventLoopGroup group = new NioEventLoopGroup();
         try {
-            //2.创建ServerBootstrap
+            //2.创建ServerBootstrap实例,引导和绑定服务器
             ServerBootstrap b = new ServerBootstrap();
             b.group(group)
               .channel(NioServerSocketChannel.class)     //3.指定所使用的NIO传输

@@ -37,6 +37,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, Throwable t)
 			throws Exception {
+		t.printStackTrace();
 		ctx.close();
 	}
 

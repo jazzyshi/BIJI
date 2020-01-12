@@ -15,10 +15,10 @@ public class ServerHeartBeatHandler extends ChannelInboundHandlerAdapter {
 	
 	static {
 		AUTH_IP_MAP.put("169.254.131.29", "1234");
+		AUTH_IP_MAP.put("169.254.131.30", "1234");
 	}
 	
 	private boolean auth(ChannelHandlerContext ctx, Object msg){
-			//System.out.println(msg);
 			String [] ret = ((String) msg).split(",");
 			String auth = AUTH_IP_MAP.get(ret[0]);
 			if(auth != null && auth.equals(ret[1])){
@@ -40,19 +40,19 @@ public class ServerHeartBeatHandler extends ChannelInboundHandlerAdapter {
 			System.out.println("--------------------------------------------");
 			System.out.println("当前主机ip为: " + info.getIp());
 			System.out.println("当前主机cpu情况: ");
-//			HashMap<String, Object> cpu = info.getCpuPercMap();
-//			System.out.println("总使用率: " + cpu.get("combined"));
-//			System.out.println("用户使用率: " + cpu.get("user"));
-//			System.out.println("系统使用率: " + cpu.get("sys"));
-//			System.out.println("等待率: " + cpu.get("wait"));
-//			System.out.println("空闲率: " + cpu.get("idle"));
-//
-//			System.out.println("当前主机memory情况: ");
-//			HashMap<String, Object> memory = info.getMemoryMap();
-//			System.out.println("内存总量: " + memory.get("total"));
-//			System.out.println("当前内存使用量: " + memory.get("used"));
-//			System.out.println("当前内存剩余量: " + memory.get("free"));
-//			System.out.println("--------------------------------------------");
+			HashMap<String, Object> cpu = info.getCpuPercMap();
+			System.out.println("总使用率: " + cpu.get("combined"));
+			System.out.println("用户使用率: " + cpu.get("user"));
+			System.out.println("系统使用率: " + cpu.get("sys"));
+			System.out.println("等待率: " + cpu.get("wait"));
+			System.out.println("空闲率: " + cpu.get("idle"));
+
+			System.out.println("当前主机memory情况: ");
+			HashMap<String, Object> memory = info.getMemoryMap();
+			System.out.println("内存总量: " + memory.get("total"));
+			System.out.println("当前内存使用量: " + memory.get("used"));
+			System.out.println("当前内存剩余量: " + memory.get("free"));
+			System.out.println("--------------------------------------------");
 			
 			ctx.writeAndFlush("info received!");
 		} else {

@@ -23,8 +23,8 @@ public class Client {
 			out = new PrintWriter(socket.getOutputStream(), true);
 			
 			//向服务器端发送数据
-			out.println("接收到客户端的请求数据...");
-			out.println("接收到客户端的请求数据1111...");
+			out.println("客户端的请求数据...");
+			out.println("客户端的请求数据1111...");
 			String response = in.readLine();
 			System.out.println("Client: " + response);
 			

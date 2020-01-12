@@ -8,8 +8,7 @@ import io.netty.handler.codec.http.*;
 import static io.netty.handler.codec.http.HttpHeaders.Values.KEEP_ALIVE;
 import static io.netty.handler.codec.http.HttpResponseStatus.*;
 import static io.netty.handler.codec.http.HttpVersion.*;
-import static io.netty.handler.codec.rtsp.RtspHeaders.Names.CONNECTION;
-import static io.netty.handler.codec.rtsp.RtspHeaders.Names.CONTENT_TYPE;
+import static io.netty.handler.codec.rtsp.RtspHeaders.Names.*;
 import static org.apache.http.HttpHeaders.CONTENT_LENGTH;
 
 

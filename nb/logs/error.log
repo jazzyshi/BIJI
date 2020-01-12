@@ -159,3 +159,91 @@
 	at org.apache.curator.framework.imps.ExistsBuilderImpl$1.processResult(ExistsBuilderImpl.java:123)
 	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:592)
 	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
+2019-12-14 18:43:26 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10:2181
+  java.net.UnknownHostException: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10: invalid IPv6 address
+	at java.net.InetAddress.getAllByName(InetAddress.java:1169)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-12-14 18:43:28 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10:2181
+  java.net.UnknownHostException: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10: invalid IPv6 address
+	at java.net.InetAddress.getAllByName(InetAddress.java:1169)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-12-14 18:43:29 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10:2181
+  java.net.UnknownHostException: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10: invalid IPv6 address
+	at java.net.InetAddress.getAllByName(InetAddress.java:1169)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-12-14 18:43:30 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10:2181
+  java.net.UnknownHostException: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10: invalid IPv6 address
+	at java.net.InetAddress.getAllByName(InetAddress.java:1169)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-12-14 18:43:31 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10:2181
+  java.net.UnknownHostException: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10: invalid IPv6 address
+	at java.net.InetAddress.getAllByName(InetAddress.java:1169)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-12-14 18:43:32 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10:2181
+  java.net.UnknownHostException: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10: invalid IPv6 address
+	at java.net.InetAddress.getAllByName(InetAddress.java:1169)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-12-14 18:43:33 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10:2181
+  java.net.UnknownHostException: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10: invalid IPv6 address
+	at java.net.InetAddress.getAllByName(InetAddress.java:1169)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-12-14 18:43:34 [ERROR]-[org.apache.zookeeper.client.StaticHostProvider] Unable to resolve address: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10:2181
+  java.net.UnknownHostException: 192.168.170.30:2181;192.168.170.20:2181;192.168.170.10: invalid IPv6 address
+	at java.net.InetAddress.getAllByName(InetAddress.java:1169)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:92)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:147)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:375)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1137)
+2019-12-14 19:18:06 [ERROR]-[org.apache.zookeeper.ClientCnxn] Error while calling watcher 
+  java.lang.NullPointerException
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
+2019-12-14 19:18:08 [ERROR]-[org.apache.zookeeper.ClientCnxn] Error while calling watcher 
+  java.lang.NullPointerException
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
+2019-12-14 19:18:11 [ERROR]-[org.apache.zookeeper.ClientCnxn] Error while calling watcher 
+  java.lang.NullPointerException
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
+2019-12-14 19:18:13 [ERROR]-[org.apache.zookeeper.ClientCnxn] Error while calling watcher 
+  java.lang.NullPointerException
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
+2019-12-14 19:18:15 [ERROR]-[org.apache.zookeeper.ClientCnxn] Error while calling watcher 
+  java.lang.NullPointerException
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
+2019-12-14 19:18:17 [ERROR]-[org.apache.zookeeper.ClientCnxn] Error while calling watcher 
+  java.lang.NullPointerException
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
