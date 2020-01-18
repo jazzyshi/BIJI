@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
@@ -17,6 +18,15 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @Date 2019/6/5 9:19
  * @Version 1.0
  **/
+
+/**
+ * @RunWith:启动器
+ * SpringJUnit4ClassRunner.class ：让junit与spring环境整合
+ * @SpringBootTestclasses={Springboot1Application.class}
+ * 1.当前类为springboot的测试类
+ * 2.加载springboot启动类。启动springboot
+ * @ContextConfiguration("classpath:application.yml")
+ */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes={Springboot1Application.class})
 public class UserTest {

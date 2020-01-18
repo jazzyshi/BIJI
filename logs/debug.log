@@ -1,10 +1,144 @@
-2019-11-08 21:58:44 [WARN]-[org.apache.curator.CuratorZookeeperClient] session timeout [5000] is less than connection timeout [15000]
-  2019-11-08 21:58:44 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
-  2019-11-08 21:59:13 [WARN]-[org.apache.curator.CuratorZookeeperClient] session timeout [5000] is less than connection timeout [15000]
-  2019-11-08 21:59:13 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
-  2019-11-08 21:59:25 [WARN]-[org.apache.curator.CuratorZookeeperClient] session timeout [5000] is less than connection timeout [15000]
-  2019-11-08 21:59:25 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
-  2019-11-08 22:01:02 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
-  2019-11-08 23:41:55 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
-  2019-11-08 23:43:35 [INFO]-[org.apache.curator.framework.imps.CuratorFrameworkImpl] Starting
+2020-01-11 11:46:29 [WARN]-[io.netty.bootstrap.ServerBootstrap] Unknown channel option 'SO_SNDBUF' for channel '[id: 0xc8523939]'
+  2020-01-11 11:46:29 [WARN]-[io.netty.bootstrap.ServerBootstrap] Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xc8523939]'
+  2020-01-11 11:46:29 [WARN]-[io.netty.bootstrap.ServerBootstrap] Unknown channel option 'SO_SNDBUF' for channel '[id: 0x636603c2]'
+  2020-01-11 11:46:29 [WARN]-[io.netty.bootstrap.ServerBootstrap] Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x636603c2]'
+  2020-01-11 12:01:54 [WARN]-[io.netty.bootstrap.ServerBootstrap] Unknown channel option 'SO_SNDBUF' for channel '[id: 0x11afa598]'
+  2020-01-11 12:04:57 [WARN]-[io.netty.bootstrap.ServerBootstrap] Unknown channel option 'SO_SNDBUF' for channel '[id: 0x3c7f412a]'
+  2020-01-11 12:14:03 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x9a78c5fd] REGISTERED
+  2020-01-11 12:14:03 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x9a78c5fd] BIND(0.0.0.0/0.0.0.0:8765)
+  2020-01-11 12:14:03 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x9a78c5fd, L:/0:0:0:0:0:0:0:0:8765] ACTIVE
+  2020-01-11 12:14:20 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x9a78c5fd, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0x0b37b115, L:/127.0.0.1:8765 - R:/127.0.0.1:56072]
+  2020-01-11 12:14:20 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x9a78c5fd, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 12:14:44 [WARN]-[io.netty.channel.DefaultChannelPipeline] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+  java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:368)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:892)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:243)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:646)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:460)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:131)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-11 12:16:27 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x1281e5da] REGISTERED
+  2020-01-11 12:16:27 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x1281e5da] BIND(0.0.0.0/0.0.0.0:8765)
+  2020-01-11 12:16:27 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x1281e5da, L:/0:0:0:0:0:0:0:0:8765] ACTIVE
+  2020-01-11 12:16:36 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x1281e5da, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0x4982c2d7, L:/127.0.0.1:8765 - R:/127.0.0.1:56386]
+  2020-01-11 12:16:36 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x1281e5da, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 12:18:34 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x1281e5da, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0x33e1f7f7, L:/127.0.0.1:8765 - R:/127.0.0.1:56586]
+  2020-01-11 12:18:34 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x1281e5da, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 12:19:14 [WARN]-[io.netty.channel.DefaultChannelPipeline] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+  java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:368)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:892)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:243)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:646)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:460)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:131)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-11 12:21:57 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xccd9cbc0] REGISTERED
+  2020-01-11 12:21:57 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xccd9cbc0] BIND(0.0.0.0/0.0.0.0:8765)
+  2020-01-11 12:21:57 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xccd9cbc0, L:/0:0:0:0:0:0:0:0:8765] ACTIVE
+  2020-01-11 12:22:04 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xccd9cbc0, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0x40d2f468, L:/127.0.0.1:8765 - R:/127.0.0.1:56922]
+  2020-01-11 12:22:04 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xccd9cbc0, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 12:23:01 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x02ce44dd] REGISTERED
+  2020-01-11 12:23:01 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x02ce44dd] BIND(0.0.0.0/0.0.0.0:8765)
+  2020-01-11 12:23:01 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x02ce44dd, L:/0:0:0:0:0:0:0:0:8765] ACTIVE
+  2020-01-11 12:23:07 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x02ce44dd, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0x257df83b, L:/127.0.0.1:8765 - R:/127.0.0.1:57059]
+  2020-01-11 12:23:07 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x02ce44dd, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 12:26:28 [WARN]-[io.netty.channel.DefaultChannelPipeline] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+  java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:368)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:892)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:243)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:646)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:460)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:131)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-11 12:27:20 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xfd885d39] REGISTERED
+  2020-01-11 12:27:20 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xfd885d39] BIND(0.0.0.0/0.0.0.0:8765)
+  2020-01-11 12:27:20 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xfd885d39, L:/0:0:0:0:0:0:0:0:8765] ACTIVE
+  2020-01-11 12:27:31 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xfd885d39, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0x28b5f14b, L:/127.0.0.1:8765 - R:/127.0.0.1:57551]
+  2020-01-11 12:27:31 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xfd885d39, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 12:27:46 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xfd885d39, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0xfbcc1fdf, L:/127.0.0.1:8765 - R:/127.0.0.1:57625]
+  2020-01-11 12:27:46 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xfd885d39, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 12:28:09 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x578603e5] REGISTERED
+  2020-01-11 12:28:09 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x578603e5] BIND(0.0.0.0/0.0.0.0:8765)
+  2020-01-11 12:28:09 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x578603e5, L:/0:0:0:0:0:0:0:0:8765] ACTIVE
+  2020-01-11 12:28:13 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x578603e5, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0xaadb1a40, L:/127.0.0.1:8765 - R:/127.0.0.1:57747]
+  2020-01-11 12:28:13 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x578603e5, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 12:30:03 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xfc7fd752] REGISTERED
+  2020-01-11 12:30:03 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xfc7fd752] BIND(0.0.0.0/0.0.0.0:8765)
+  2020-01-11 12:30:03 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xfc7fd752, L:/0:0:0:0:0:0:0:0:8765] ACTIVE
+  2020-01-11 12:30:22 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xea399fdf] REGISTERED
+  2020-01-11 12:30:22 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xea399fdf] BIND(0.0.0.0/0.0.0.0:8765)
+  2020-01-11 12:30:22 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xea399fdf, L:/0:0:0:0:0:0:0:0:8765] ACTIVE
+  2020-01-11 12:31:18 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xea399fdf, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0x0fa7678a, L:/127.0.0.1:8765 - R:/127.0.0.1:58214]
+  2020-01-11 12:31:18 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xea399fdf, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 19:14:13 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc] REGISTERED
+  2020-01-11 19:14:13 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc] BIND(0.0.0.0/0.0.0.0:8080)
+  2020-01-11 19:14:13 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc, L:/0:0:0:0:0:0:0:0:8080] ACTIVE
+  2020-01-11 19:14:17 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc, L:/0:0:0:0:0:0:0:0:8080] READ: [id: 0xa58ce552, L:/127.0.0.1:8080 - R:/127.0.0.1:56777]
+  2020-01-11 19:14:17 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc, L:/0:0:0:0:0:0:0:0:8080] READ: [id: 0x7be02487, L:/127.0.0.1:8080 - R:/127.0.0.1:56778]
+  2020-01-11 19:14:17 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc, L:/0:0:0:0:0:0:0:0:8080] READ COMPLETE
+  2020-01-11 19:14:21 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc, L:/0:0:0:0:0:0:0:0:8080] READ: [id: 0xdb67d323, L:/127.0.0.1:8080 - R:/127.0.0.1:56779]
+  2020-01-11 19:14:21 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc, L:/0:0:0:0:0:0:0:0:8080] READ: [id: 0x0431659e, L:/127.0.0.1:8080 - R:/127.0.0.1:56780]
+  2020-01-11 19:14:21 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc, L:/0:0:0:0:0:0:0:0:8080] READ COMPLETE
+  2020-01-11 19:14:21 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc, L:/0:0:0:0:0:0:0:0:8080] READ: [id: 0xd9f42674, L:/127.0.0.1:8080 - R:/127.0.0.1:56782]
+  2020-01-11 19:14:21 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc, L:/0:0:0:0:0:0:0:0:8080] READ: [id: 0x37b1b4de, L:/127.0.0.1:8080 - R:/127.0.0.1:56783]
+  2020-01-11 19:14:21 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x654ebedc, L:/0:0:0:0:0:0:0:0:8080] READ COMPLETE
+  2020-01-11 19:19:19 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xa3cf4a7e] REGISTERED
+  2020-01-11 19:19:19 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xa3cf4a7e] BIND(0.0.0.0/0.0.0.0:8080)
+  2020-01-11 19:19:19 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xa3cf4a7e, L:/0:0:0:0:0:0:0:0:8080] ACTIVE
+  2020-01-11 19:19:41 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xa3cf4a7e, L:/0:0:0:0:0:0:0:0:8080] READ: [id: 0x4a886683, L:/127.0.0.1:8080 - R:/127.0.0.1:57273]
+  2020-01-11 19:19:41 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xa3cf4a7e, L:/0:0:0:0:0:0:0:0:8080] READ COMPLETE
+  2020-01-11 19:19:58 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xa3cf4a7e, L:/0:0:0:0:0:0:0:0:8080] READ: [id: 0x88ad26b5, L:/127.0.0.1:8080 - R:/127.0.0.1:57314]
+  2020-01-11 19:19:58 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xa3cf4a7e, L:/0:0:0:0:0:0:0:0:8080] READ COMPLETE
+  2020-01-11 19:19:58 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xa3cf4a7e, L:/0:0:0:0:0:0:0:0:8080] READ: [id: 0x3ef2a38c, L:/127.0.0.1:8080 - R:/127.0.0.1:57315]
+  2020-01-11 19:19:58 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xa3cf4a7e, L:/0:0:0:0:0:0:0:0:8080] READ COMPLETE
+  2020-01-11 19:26:04 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x94fe2427] REGISTERED
+  2020-01-11 19:26:04 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x94fe2427] BIND(0.0.0.0/0.0.0.0:8765)
+  2020-01-11 19:26:04 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x94fe2427, L:/0:0:0:0:0:0:0:0:8765] ACTIVE
+  2020-01-11 19:26:15 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x94fe2427, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0x28166444, L:/127.0.0.1:8765 - R:/127.0.0.1:57942]
+  2020-01-11 19:26:15 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x94fe2427, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 19:26:28 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x94fe2427, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0x23edb41f, L:/127.0.0.1:8765 - R:/127.0.0.1:57978]
+  2020-01-11 19:26:28 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x94fe2427, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 19:28:51 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x94fe2427, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0xcf28b089, L:/127.0.0.1:8765 - R:/127.0.0.1:58192]
+  2020-01-11 19:28:51 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x94fe2427, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 19:29:04 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x94fe2427, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0xea320298, L:/127.0.0.1:8765 - R:/127.0.0.1:58228]
+  2020-01-11 19:29:04 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x94fe2427, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
+  2020-01-11 19:35:31 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x2285d61c] REGISTERED
+  2020-01-11 19:35:31 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x2285d61c] BIND(0.0.0.0/0.0.0.0:8765)
+  2020-01-11 19:35:31 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x2285d61c] CLOSE()
+  2020-01-11 19:35:31 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x2285d61c] UNREGISTERED
+  2020-01-11 19:35:43 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xca5c93d0] REGISTERED
+  2020-01-11 19:35:43 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xca5c93d0] BIND(0.0.0.0/0.0.0.0:8765)
+  2020-01-11 19:35:43 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xca5c93d0, L:/0:0:0:0:0:0:0:0:8765] ACTIVE
+  2020-01-11 19:38:46 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xca5c93d0, L:/0:0:0:0:0:0:0:0:8765] READ: [id: 0x4d2ce6d4, L:/127.0.0.1:8765 - R:/127.0.0.1:59077]
+  2020-01-11 19:38:46 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xca5c93d0, L:/0:0:0:0:0:0:0:0:8765] READ COMPLETE
   
