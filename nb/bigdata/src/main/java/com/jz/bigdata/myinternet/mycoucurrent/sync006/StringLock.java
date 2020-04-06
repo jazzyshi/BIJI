@@ -8,6 +8,7 @@ public class StringLock {
 
 	public void method() {
 		//new String("字符串常量")
+		//Integer.valueOf(127) //数字缓存
 		synchronized ("字符串常量") {
 			try {
 				while(true){
@@ -20,7 +21,7 @@ public class StringLock {
 			}
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		final StringLock stringLock = new StringLock();
 
@@ -36,7 +37,7 @@ public class StringLock {
 				stringLock.method();//字符串常量即使换成stringLock1也会其作用，牛逼吧
 			}
 		},"t2");
-		
+
 		t1.start();
 		t2.start();
 	}

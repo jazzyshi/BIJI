@@ -3,7 +3,7 @@ package com.jz.bigdata.myinternet.mycoucurrent.sync006;
 /**
  * 使用synchronized代码块加锁,比较灵活
  *
- *
+ * 定义了三个对象锁 互不影响
  * @author alienware
  *
  */
@@ -19,8 +19,8 @@ public class ObjectLock {
 			}
 		}
 	}
-	
-	public void method2(){		//类锁
+
+	public void method2(){		//ObjectLock.class锁
 		synchronized (ObjectLock.class) {
 			try {
 				System.out.println("do method2..");
@@ -30,7 +30,7 @@ public class ObjectLock {
 			}
 		}
 	}
-	
+
 	private Object lock = new Object();
 	public void method3(){		//任何对象锁
 		synchronized (lock) {
@@ -42,8 +42,8 @@ public class ObjectLock {
 			}
 		}
 	}
-	
-	
+
+
 	public static void main(String[] args) {
 		
 		final ObjectLock objLock = new ObjectLock();
@@ -58,14 +58,14 @@ public class ObjectLock {
 			@Override
 			public void run() {
 				objLock.method2();
-				//objLock.method2();
+				objLock.method2();
 			}
 		});
 		Thread t3 = new Thread(new Runnable() {
 			@Override
 			public void run() {
 				objLock.method3();
-				//objLock.method3();
+				objLock.method3();
 			}
 		});
 		

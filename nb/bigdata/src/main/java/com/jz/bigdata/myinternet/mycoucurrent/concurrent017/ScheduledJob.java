@@ -20,6 +20,7 @@ public class ScheduledJob {
 
         //延时5s，然后开始每隔1s执行一次
         ScheduledFuture<?> scheduleTask = scheduler.scheduleWithFixedDelay(command, 5, 1, TimeUnit.SECONDS);
+
     
     }
 }

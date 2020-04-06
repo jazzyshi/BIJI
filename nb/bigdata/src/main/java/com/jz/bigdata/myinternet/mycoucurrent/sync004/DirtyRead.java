@@ -27,7 +27,7 @@ public class DirtyRead {
 	/**
 	 * 为了保证原子性加syncronized
 	 */
-	public void getValue(){
+	public  void getValue(){
 		System.out.println("getValue方法得到：username = " + this.username + " , password = " + this.password);
 	}
 	

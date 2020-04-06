@@ -15,5 +15,7 @@ public class Singletion {
 	public static Singletion getInstance(){
 		return InnerSingletion.single;
 	}
+
+	private Singletion(){};
 	
 }

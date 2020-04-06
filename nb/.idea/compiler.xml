@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="important" />
+        <module name="common" />
+        <module name="website" />
+        <module name="bigdata" />
+        <module name="home" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bigdata" target="1.8" />
+      <module name="common" target="1.7" />
+      <module name="home" target="1.7" />
+      <module name="important" target="1.7" />
+      <module name="system" target="1.7" />
+      <module name="website" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

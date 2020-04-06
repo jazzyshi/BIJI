@@ -21,7 +21,7 @@ public class WangBa implements Runnable {
     @Override  
     public void run() {  
         while(yinye){  
-            try {  
+            try {
                 Wangmin man = queue.take();  
                 xiaji(man);  
             } catch (InterruptedException e) {  

@@ -1,5 +1,7 @@
 package com.jz.bigdata.myinternet.mycoucurrent.concurrent017;
 
+import java.util.concurrent.Executors;
+
 /**
  * 线程框架Executor:为了更好的控制线程。在java.util.concurrent包中
  * 多任务执行框架
@@ -11,12 +13,16 @@ package com.jz.bigdata.myinternet.mycoucurrent.concurrent017;
  * 3.newCachedThreadPool(),可根据实际情况调整线程池的个数，
  *   每一个空闲的线程会在默认60s后自动回收
  * 4.newScheduledThreadPool()方法，该方法返回SchededExecutorService对象，可以指定线程池的大小
- *   队列是elayedQueueD，可以实现定时功能
+ *   队列是delayedQueueD，可以实现定时功能
  */
 
 public class UseExecutors {
 
 	public static void main(String[] args) {
-		
+		Executors.newFixedThreadPool(10);
+		Executors.newCachedThreadPool();
+		Executors.newSingleThreadExecutor();
+		Executors.newScheduledThreadPool(10);
+		Executors.newWorkStealingPool();
 	}
 }

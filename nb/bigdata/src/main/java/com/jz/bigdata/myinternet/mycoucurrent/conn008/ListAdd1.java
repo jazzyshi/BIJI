@@ -5,7 +5,6 @@ import java.util.List;
 
 public class ListAdd1 {
 
-
 	//注意volatile的左右
 	private volatile static List list = new ArrayList();
 	
@@ -17,9 +16,7 @@ public class ListAdd1 {
 	}
 	
 	public static void main(String[] args) {
-		
 		final ListAdd1 list1 = new ListAdd1();
-		
 		Thread t1 = new Thread(new Runnable() {
 			@Override
 			public void run() {
