@@ -110,6 +110,11 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
 		</dependency>
+		<!--
+			SpringLoader和DevTools的区别
+			SpringLoader:在部署项目时使用的是热部署方式（缺陷：java代码做部署处理，但是对页面无能为力）
+			DevTools:在部署项目时使用的是重新部署的方式
+		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>

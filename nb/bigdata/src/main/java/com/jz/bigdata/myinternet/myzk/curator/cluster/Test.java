@@ -55,9 +55,6 @@ public class Test {
 //		//7 删除节点
 		Thread.sleep(1000);
 		cf.delete().forPath("/super/c1");
-		
-		
-		
-		
+
 	}
 }

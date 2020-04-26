@@ -81,7 +81,6 @@ public class CuratorBase {
 		}
 		
 		Stat stat = cf.checkExists().forPath("/super/c3");
-		System.out.println(stat);
 		
 //		Thread.sleep(2000);
 //		cf.delete().guaranteed().deletingChildrenIfNeeded().forPath("/super");

@@ -26,7 +26,6 @@ public class DemoBitSet {
         }
     }
 
-
     /**
      * 字节数组转化为BitSet
      * @param bytes

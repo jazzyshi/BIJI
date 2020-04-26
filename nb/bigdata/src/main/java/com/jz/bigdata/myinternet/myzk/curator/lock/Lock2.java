@@ -44,6 +44,7 @@ public class Lock2 {
 		
 		//4 分布式锁
 		final InterProcessMutex lock = new InterProcessMutex(cf, "/super1");
+		lock.acquire();
 		//final ReentrantLock reentrantLock = new ReentrantLock();//在分布式的时候会有问题
 		final CountDownLatch countdown = new CountDownLatch(1);
 		

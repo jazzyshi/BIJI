@@ -34,7 +34,8 @@ public class UserTest {
     private UserServer userServer;
 
     @Test
-    public void testSe(){
+    public  void testSe(){
+
 
         System.out.println(userServer.Se(3));
         System.out.println("第一次结束");
@@ -43,11 +44,14 @@ public class UserTest {
         System.out.println("再一次结束");
         try {
             System.out.println("休眠3s");
+            UserTest userTest = new UserTest();
+            userTest.getClass();
+            Class a = UserTest.class;
             Thread.sleep(3000);
             System.out.println(userServer.Se(3));
             System.out.println("再一次结束");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    };
+    }
 }
