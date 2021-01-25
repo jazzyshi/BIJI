@@ -67,6 +67,19 @@
             <artifactId>guava</artifactId>
             <version>18.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+            <version>3.1.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
+            <scope>test</scope>
+            <version>3.1.6.RELEASE</version>
+        </dependency>
+
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-recipes</artifactId>
@@ -126,6 +139,12 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
+            <version>3.1.6.RELEASE</version>
+            <scope>compile</scope>
         </dependency>
         <!--hadoop相关-->
         <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-hdfs -->
